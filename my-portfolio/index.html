@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Портфолио Михаил Ряховский</title>
+		<meta name="description" content="Портфолио" />
+		<meta name="keywords" content="ключевые слова, фразы" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+		
+		<!-- Styles -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Michael Ria - HTML/CSS-coder" />
+		<meta property="og:description" content="Portfolio Michael Ria - HTML/CSS-coder" />
+		<meta property="og:image" content="./img/opengraph.jpg"/>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+	</head>
+	<body>
+		<div id="overlay"></div>
+		
+		<!-- Top and Navigation for S-Tablet & Mobile -->
+		<button class="page-top__button-nav-icon nav-icon">
+			<div class="nav-icon__middle"></div>
+		</button>
+
+		<div class="mobile-nav">
+
+			<ul class="mobile-nav__list">
+				<li><a href="#skills">Навыки</a></li>
+				<li><a href="#portfolio">Портфолио</a></li>
+				<li><a href="#timeline">Как я работаю</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+			</ul>
+
+			<div class="mobile-nav__contacts">
+				<!-- Contacts-Social -->
+				<div class="contacts-social">
+					<a href="https://t.me/Michael_Ria"> 
+						<svg class="telegram-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#039BE5"/>
+							<path d="M10.9815 23.48L34.1216 14.558C35.1956 14.17 36.1336 14.82 35.7856 16.444L35.7875 16.442L31.8475 35.004C31.5555 36.32 30.7736 36.64 29.6796 36.02L23.6796 31.598L20.7855 34.386C20.4655 34.706 20.1955 34.976 19.5755 34.976L20.0015 28.87L31.1215 18.824C31.6056 18.398 31.0135 18.158 30.3755 18.582L16.6336 27.234L10.7095 25.386C9.42355 24.978 9.39555 24.1 10.9815 23.48Z" fill="white"/>
+						</svg>
+					</a>
+					<a href="https://vk.com/michael_ria"> 
+						<svg class="vk-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#4D76A1"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M23.0933 34.5261H24.977C24.977 34.5261 25.546 34.4637 25.8365 34.1505C26.1039 33.863 26.0953 33.3231 26.0953 33.3231C26.0953 33.3231 26.0585 30.7955 27.2316 30.4233C28.388 30.0567 29.873 32.8662 31.447 33.9464C32.6372 34.764 33.5416 34.5847 33.5416 34.5847L37.7501 34.5261C37.7501 34.5261 39.9517 34.3905 38.9078 32.6595C38.8222 32.5179 38.2998 31.3791 35.7787 29.0389C33.1399 26.5896 33.4933 26.9858 36.672 22.749C38.6079 20.1688 39.3818 18.5936 39.1401 17.9189C38.9095 17.2763 37.4857 17.4462 37.4857 17.4462L32.7471 17.4757C32.7471 17.4757 32.3959 17.4278 32.1353 17.5835C31.8808 17.7362 31.7169 18.0922 31.7169 18.0922C31.7169 18.0922 30.967 20.0888 29.9667 21.7869C27.8567 25.3699 27.013 25.559 26.6682 25.3365C25.866 24.818 26.0662 23.2534 26.0662 22.142C26.0662 18.6697 26.5929 17.222 25.0408 16.8472C24.5257 16.7227 24.1466 16.6406 22.8293 16.6273C21.1386 16.6098 19.7075 16.6324 18.8972 17.0295C18.3582 17.2934 17.9423 17.8817 18.1956 17.9155C18.5088 17.9574 19.2181 18.1067 19.5941 18.6188C20.0797 19.2794 20.0626 20.7631 20.0626 20.7631C20.0626 20.7631 20.3416 24.8505 19.411 25.3583C18.7723 25.7066 17.8961 24.9955 16.015 21.7449C15.0511 20.0798 14.3234 18.2394 14.3234 18.2394C14.3234 18.2394 14.183 17.8954 13.9328 17.7114C13.629 17.4885 13.2046 17.4175 13.2046 17.4175L8.70178 17.447C8.70178 17.447 8.02582 17.4658 7.77768 17.7598C7.55693 18.0212 7.76014 18.5619 7.76014 18.5619C7.76014 18.5619 11.2854 26.8095 15.277 30.9658C18.937 34.7764 23.0933 34.5261 23.0933 34.5261Z" fill="white"/>
+						</svg>
+					</a>
+					<a href="https://www.facebook.com/michael.ria.33">
+						<svg class="facebook-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M23.9999 0C37.2555 0 48 10.746 48 24.0001C48 37.2557 37.2555 48 23.9999 48C10.7443 48 0 37.2555 0 24.0001C0 10.746 10.7445 0 23.9999 0Z" fill="#3B5998"/>
+							<path d="M26.9219 16.5224H30.0149V11.9534H26.379V11.9699C21.9734 12.1259 21.0705 14.6024 20.9909 17.2034H20.9819V19.485H17.9819V23.9594H20.9819V35.9533H25.5029V23.9594H29.2064L29.9218 19.485H25.5044V18.1065C25.5044 17.2275 26.0893 16.5224 26.9219 16.5224Z" fill="white"/>
+						</svg>
+					</a>
+					 <!-- <a href="#">
+						<svg class="instagram-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)">
+							<path d="M2.99991 3.26602C-0.77209 7.18402 -8.97646e-05 11.346 -8.97646e-05 23.99C-8.97646e-05 34.49 -1.83209 45.016 7.75591 47.494C10.7499 48.264 37.2779 48.264 40.2679 47.49C44.2599 46.46 47.5079 43.222 47.9519 37.576C48.0139 36.788 48.0139 11.206 47.9499 10.402C47.4779 4.38802 43.7759 0.922017 38.8979 0.220017C37.7799 0.0580165 37.5559 0.0100165 31.8199 1.64956e-05C11.4739 0.0100165 7.01391 -0.895984 2.99991 3.26602Z" fill="url(#paint0_linear)"/>
+							<path d="M23.9961 6.27804C16.7341 6.27804 9.83812 5.63204 7.20412 12.392C6.11612 15.184 6.27412 18.81 6.27412 24.002C6.27412 28.5581 6.12812 32.84 7.20412 35.6101C9.83212 42.3741 16.7841 41.7261 23.9921 41.7261C30.9461 41.7261 38.1161 42.4501 40.7821 35.6101C41.8721 32.7901 41.7121 29.2181 41.7121 24.002C41.7121 17.078 42.0941 12.608 38.7361 9.25204C35.3361 5.85204 30.7381 6.27804 23.9881 6.27804H23.9961ZM22.4081 9.47205C37.5561 9.44805 39.4841 7.76405 38.4201 31.1581C38.0421 39.4321 31.7421 38.524 23.9981 38.524C9.87812 38.524 9.47212 38.12 9.47212 23.994C9.47212 9.70405 10.5921 9.48005 22.4081 9.46805V9.47205ZM33.4561 12.414C32.2821 12.414 31.3301 13.366 31.3301 14.54C31.3301 15.714 32.2821 16.666 33.4561 16.666C34.6301 16.666 35.5821 15.714 35.5821 14.54C35.5821 13.366 34.6301 12.414 33.4561 12.414ZM23.9961 14.9C18.9701 14.9 14.8961 18.976 14.8961 24.002C14.8961 29.028 18.9701 33.1021 23.9961 33.1021C29.0221 33.1021 33.0941 29.028 33.0941 24.002C33.0941 18.976 29.0221 14.9 23.9961 14.9ZM23.9961 18.094C31.8061 18.094 31.8161 29.91 23.9961 29.91C16.1881 29.91 16.1761 18.094 23.9961 18.094Z" fill="white"/>
+							</g>
+							<defs>
+							<linearGradient id="paint0_linear" x1="3.09195" y1="44.9342" x2="47.7029" y2="6.32397" gradientUnits="userSpaceOnUse">
+							<stop offset="0" stop-color="#FFDD55"/>
+							<stop offset="0.5" stop-color="#FF543E"/>
+							<stop offset="1" stop-color="#C837AB"/>
+							</linearGradient>
+							<clipPath id="clip0">
+							<rect width="48" height="48" fill="white"/>
+							</clipPath>
+							</defs>
+						</svg>
+							
+					</a> -->
+					<a href="https://api.whatsapp.com/send? phone=+48722715698">
+						<svg class="whatsapp-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0)">
+							<path d="M23.9871 0.0126382C10.7401 0.015449 0.00357906 10.7566 0.00638989 24.0036C0.00732684 28.5906 1.32364 33.0811 3.79905 36.9428L0.0672913 46.6251C-0.131435 47.1401 0.124914 47.7186 0.639859 47.9174C0.755009 47.9618 0.877281 47.9845 1.00068 47.9843C1.11517 47.9849 1.22882 47.9653 1.33648 47.9263L11.3306 44.3585C22.5751 51.3617 37.3677 47.9234 44.3709 36.6788C51.374 25.4342 47.9357 10.6416 36.6912 3.63852C32.8795 1.26449 28.4778 0.00823454 23.9871 0.0126382Z" fill="#55CD6C"/>
+							<path d="M35.422 28.098C35.422 28.098 32.9735 26.8987 31.4404 26.0992C29.7054 25.2057 27.6666 26.8787 26.7072 27.8302C25.214 27.2566 23.8502 26.3908 22.6956 25.2837C21.5882 24.1292 20.7225 22.7654 20.1491 21.272C21.1005 20.3106 22.7695 18.2738 21.8801 16.5389C21.0905 15.0038 19.8813 12.5572 19.8813 12.5552C19.7116 12.2185 19.3669 12.0059 18.9898 12.0055H16.991C14.0801 12.5083 11.9636 15.0482 11.994 18.002C11.994 21.1401 15.7497 27.1686 18.2823 29.703C20.8148 32.2375 26.8433 35.9913 29.9833 35.9913C32.9371 36.0217 35.477 33.9051 35.9798 30.9943V28.9955C35.9801 28.6144 35.7638 28.2663 35.422 28.098Z" fill="#FAFAFA"/>
+							</g>
+							<defs>
+							<clipPath" id="clip0">
+							<rect width="48" height="48" fill="white"/>
+						</clipPath>
+					</defs>
+				</svg>
+					</a>
+				</div>
+				<!--// Contacts-Social -->
+	
+				<div class="mobile-nav__contacts-mail">
+					<a class="page-link" href="mailto:m.riakhovskyi@gmail.com">m.riakhovskyi@gmail.com</a>
+				</div>
+			</div>
+			
+		</div>
+		<!-- //  Top and Navigation for S-Tablet & Mobile -->
+		
+		<!-- Desctop and Big Tablet Navigation -->
+		<div class="page-nav">
+
+			<!-- Top title for Small Tablet and Mobile -->
+			<div class="page-top__title">
+				<logo class="top-title">HTML Верстальщик</logo>
+			</div>
+			<!--// Top title for Small Tablet and Mobile -->
+
+			<div class="container">
+
+				<div class="page-nav__wrapper">
+					<ul class="page-nav__list" id="header-menu">
+						<li><a href="#skills" class="nav-list__link" data-aos="zoom-in-right" data-aos-delay="100">Навыки</a></li>
+						<li><a href="#portfolio" class="nav-list__link" data-aos="zoom-in-right" data-aos-delay="200">Портфолио</a></li>
+						<li><a href="#timeline" class="nav-list__link" data-aos="zoom-in-right" data-aos-delay="300">Как я работаю</a></li>
+						<li><a href="#contacts" class="nav-list__link" data-aos="zoom-in-right" data-aos-delay="400">Контакты</a></li>
+					</ul>
+	
+					<div class="page-nav__icons">
+						<a href="#"><i class="fab fa-linkedin-in linkedin-in-social"></i></a>
+						<a href="#"><i class="fab fa-github github-social"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<!--// container -->
+		</div>
+		<!--// Desctop and Big Tablet Navigation -->
+
+		<!-- Header -->
+		<header class="header">
+
+			<!-- Header-content -->
+			<div class="header__center">
+				<div class="container">
+					<div class="header__center-wrapper">
+						<!-- Center Title -->
+						<div class="header__center-title">
+
+							<div class="header__center-title-text">
+								<div class="gradient-wrapper"  data-aos="fade-right" data-aos-duration="800">
+									<h1 class="title-h1 gradient">Михаил Ряховский</h1>
+								</div>
+			
+								<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
+							</div>
+
+							<div class="header__center-title-buttons">
+								<a class="button button--color" href="#skills">Познакомиться</a>
+								<a class="button button--small" href="#contacts">Контакты</a>
+							</div>
+						</div>
+						<!--// Center Title -->
+	
+						<picture class="header__center-img" data-aos="fade-left" data-aos-duration="800">
+							<source srcset="./img/header/header-img-01__tablet-small.jpg" media="(max-width: 899px)">
+							<source srcset="./img/header/header-img-01__tablet-big.jpg" media="(max-width: 1139px)">
+							<img src="./img/header/header-img-01.jpg" alt="HTML/CSS Coder">
+						</picture>
+					</div>
+				</div>
+			<!--// container -->		
+			</div>
+			<!--// Header-content -->
+
+			<picture class="header__picture">
+				<source srcset="./img/header/header-img-02__mobile-xs.png" media="(max-width: 767px)">
+				<source srcset="./img/header/header-img-02__tablet-small.png" media="(max-width: 899px)">
+				<source srcset="./img/header/header-img-02__tablet-big.png" media="(max-width: 1139px)">
+				<img class="header__picture-img" src="./img/header/header-img-02.png" alt="HTML/CSS Coder projectplace">
+			</picture>
+
+			<!-- Header skills -->
+			<div class="header__skills" id="skills">
+				<div class="container">
+					<div class="header__skills-wrapper">
+						<!-- Skills -->
+						<div class="header-skills__ul" data-aos="zoom-in-down" data-aos-offset="220" data-aos-duration="700">
+							<h3 class="title-h3">Что я умею:</h3>
+		
+							<ul>
+								<li>pixel perfect, полное соответствие макету</li>
+								<li>верстаю с сеткой или без</li>
+								<li>адаптивная верстка под мобильные устройства</li>
+								<li>оптимизация по retina экраны</li>
+								<li>с Bootstrap и без него</li>
+							</ul>
+						</div>
+						<!-- Header Contacts -->
+						<div class="header-skills__contacts" data-aos="zoom-in-down" data-aos-offset="220" data-aos-duration="700">
+							<h3 class="title-h3">На связи:</h3>
+
+							<div class="header-skills__row">
+								<!-- Contacts-Social -->
+								<div class="contacts-social">
+									<a href="https://t.me/Michael_Ria"> 
+										<svg class="telegram-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#039BE5"/>
+											<path d="M10.9815 23.48L34.1216 14.558C35.1956 14.17 36.1336 14.82 35.7856 16.444L35.7875 16.442L31.8475 35.004C31.5555 36.32 30.7736 36.64 29.6796 36.02L23.6796 31.598L20.7855 34.386C20.4655 34.706 20.1955 34.976 19.5755 34.976L20.0015 28.87L31.1215 18.824C31.6056 18.398 31.0135 18.158 30.3755 18.582L16.6336 27.234L10.7095 25.386C9.42355 24.978 9.39555 24.1 10.9815 23.48Z" fill="white"/>
+										</svg>
+									</a>
+									<a href="https://vk.com/michael_ria"> 
+										<svg class="vk-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#4D76A1"/>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M23.0933 34.5261H24.977C24.977 34.5261 25.546 34.4637 25.8365 34.1505C26.1039 33.863 26.0953 33.3231 26.0953 33.3231C26.0953 33.3231 26.0585 30.7955 27.2316 30.4233C28.388 30.0567 29.873 32.8662 31.447 33.9464C32.6372 34.764 33.5416 34.5847 33.5416 34.5847L37.7501 34.5261C37.7501 34.5261 39.9517 34.3905 38.9078 32.6595C38.8222 32.5179 38.2998 31.3791 35.7787 29.0389C33.1399 26.5896 33.4933 26.9858 36.672 22.749C38.6079 20.1688 39.3818 18.5936 39.1401 17.9189C38.9095 17.2763 37.4857 17.4462 37.4857 17.4462L32.7471 17.4757C32.7471 17.4757 32.3959 17.4278 32.1353 17.5835C31.8808 17.7362 31.7169 18.0922 31.7169 18.0922C31.7169 18.0922 30.967 20.0888 29.9667 21.7869C27.8567 25.3699 27.013 25.559 26.6682 25.3365C25.866 24.818 26.0662 23.2534 26.0662 22.142C26.0662 18.6697 26.5929 17.222 25.0408 16.8472C24.5257 16.7227 24.1466 16.6406 22.8293 16.6273C21.1386 16.6098 19.7075 16.6324 18.8972 17.0295C18.3582 17.2934 17.9423 17.8817 18.1956 17.9155C18.5088 17.9574 19.2181 18.1067 19.5941 18.6188C20.0797 19.2794 20.0626 20.7631 20.0626 20.7631C20.0626 20.7631 20.3416 24.8505 19.411 25.3583C18.7723 25.7066 17.8961 24.9955 16.015 21.7449C15.0511 20.0798 14.3234 18.2394 14.3234 18.2394C14.3234 18.2394 14.183 17.8954 13.9328 17.7114C13.629 17.4885 13.2046 17.4175 13.2046 17.4175L8.70178 17.447C8.70178 17.447 8.02582 17.4658 7.77768 17.7598C7.55693 18.0212 7.76014 18.5619 7.76014 18.5619C7.76014 18.5619 11.2854 26.8095 15.277 30.9658C18.937 34.7764 23.0933 34.5261 23.0933 34.5261Z" fill="white"/>
+										</svg>
+									</a>
+									<a href="https://www.facebook.com/michael.ria.33">
+										<svg class="facebook-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M23.9999 0C37.2555 0 48 10.746 48 24.0001C48 37.2557 37.2555 48 23.9999 48C10.7443 48 0 37.2555 0 24.0001C0 10.746 10.7445 0 23.9999 0Z" fill="#3B5998"/>
+											<path d="M26.9219 16.5224H30.0149V11.9534H26.379V11.9699C21.9734 12.1259 21.0705 14.6024 20.9909 17.2034H20.9819V19.485H17.9819V23.9594H20.9819V35.9533H25.5029V23.9594H29.2064L29.9218 19.485H25.5044V18.1065C25.5044 17.2275 26.0893 16.5224 26.9219 16.5224Z" fill="white"/>
+										</svg>
+									</a>
+									 <!-- <a href="#">
+										<svg class="instagram-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0)">
+											<path d="M2.99991 3.26602C-0.77209 7.18402 -8.97646e-05 11.346 -8.97646e-05 23.99C-8.97646e-05 34.49 -1.83209 45.016 7.75591 47.494C10.7499 48.264 37.2779 48.264 40.2679 47.49C44.2599 46.46 47.5079 43.222 47.9519 37.576C48.0139 36.788 48.0139 11.206 47.9499 10.402C47.4779 4.38802 43.7759 0.922017 38.8979 0.220017C37.7799 0.0580165 37.5559 0.0100165 31.8199 1.64956e-05C11.4739 0.0100165 7.01391 -0.895984 2.99991 3.26602Z" fill="url(#paint0_linear)"/>
+											<path d="M23.9961 6.27804C16.7341 6.27804 9.83812 5.63204 7.20412 12.392C6.11612 15.184 6.27412 18.81 6.27412 24.002C6.27412 28.5581 6.12812 32.84 7.20412 35.6101C9.83212 42.3741 16.7841 41.7261 23.9921 41.7261C30.9461 41.7261 38.1161 42.4501 40.7821 35.6101C41.8721 32.7901 41.7121 29.2181 41.7121 24.002C41.7121 17.078 42.0941 12.608 38.7361 9.25204C35.3361 5.85204 30.7381 6.27804 23.9881 6.27804H23.9961ZM22.4081 9.47205C37.5561 9.44805 39.4841 7.76405 38.4201 31.1581C38.0421 39.4321 31.7421 38.524 23.9981 38.524C9.87812 38.524 9.47212 38.12 9.47212 23.994C9.47212 9.70405 10.5921 9.48005 22.4081 9.46805V9.47205ZM33.4561 12.414C32.2821 12.414 31.3301 13.366 31.3301 14.54C31.3301 15.714 32.2821 16.666 33.4561 16.666C34.6301 16.666 35.5821 15.714 35.5821 14.54C35.5821 13.366 34.6301 12.414 33.4561 12.414ZM23.9961 14.9C18.9701 14.9 14.8961 18.976 14.8961 24.002C14.8961 29.028 18.9701 33.1021 23.9961 33.1021C29.0221 33.1021 33.0941 29.028 33.0941 24.002C33.0941 18.976 29.0221 14.9 23.9961 14.9ZM23.9961 18.094C31.8061 18.094 31.8161 29.91 23.9961 29.91C16.1881 29.91 16.1761 18.094 23.9961 18.094Z" fill="white"/>
+											</g>
+											<defs>
+											<linearGradient id="paint0_linear" x1="3.09195" y1="44.9342" x2="47.7029" y2="6.32397" gradientUnits="userSpaceOnUse">
+											<stop offset="0" stop-color="#FFDD55"/>
+											<stop offset="0.5" stop-color="#FF543E"/>
+											<stop offset="1" stop-color="#C837AB"/>
+											</linearGradient>
+											<clipPath id="clip0">
+											<rect width="48" height="48" fill="white"/>
+											</clipPath>
+											</defs>
+										</svg>
+											
+									</a> -->
+									<a href="https://api.whatsapp.com/send? phone=+48722715698">
+										<svg class="whatsapp-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0)">
+											<path d="M23.9871 0.0126382C10.7401 0.015449 0.00357906 10.7566 0.00638989 24.0036C0.00732684 28.5906 1.32364 33.0811 3.79905 36.9428L0.0672913 46.6251C-0.131435 47.1401 0.124914 47.7186 0.639859 47.9174C0.755009 47.9618 0.877281 47.9845 1.00068 47.9843C1.11517 47.9849 1.22882 47.9653 1.33648 47.9263L11.3306 44.3585C22.5751 51.3617 37.3677 47.9234 44.3709 36.6788C51.374 25.4342 47.9357 10.6416 36.6912 3.63852C32.8795 1.26449 28.4778 0.00823454 23.9871 0.0126382Z" fill="#55CD6C"/>
+											<path d="M35.422 28.098C35.422 28.098 32.9735 26.8987 31.4404 26.0992C29.7054 25.2057 27.6666 26.8787 26.7072 27.8302C25.214 27.2566 23.8502 26.3908 22.6956 25.2837C21.5882 24.1292 20.7225 22.7654 20.1491 21.272C21.1005 20.3106 22.7695 18.2738 21.8801 16.5389C21.0905 15.0038 19.8813 12.5572 19.8813 12.5552C19.7116 12.2185 19.3669 12.0059 18.9898 12.0055H16.991C14.0801 12.5083 11.9636 15.0482 11.994 18.002C11.994 21.1401 15.7497 27.1686 18.2823 29.703C20.8148 32.2375 26.8433 35.9913 29.9833 35.9913C32.9371 36.0217 35.477 33.9051 35.9798 30.9943V28.9955C35.9801 28.6144 35.7638 28.2663 35.422 28.098Z" fill="#FAFAFA"/>
+											</g>
+											<defs>
+											<clipPath" id="clip0">
+											<rect width="48" height="48" fill="white"/>
+											</clipPath>
+											</defs>
+										</svg>
+									</a>
+								</div>
+								<!--// Contacts-Social -->
+							</div>
+
+							<div class="header-skills__contacts-mail">
+								<a class="page-link" href="mailto:m.riakhovskyi@gmail.com">m.riakhovskyi@gmail.com</a>
+							</div>
+						</div>
+						<!--// Header Contacts -->
+					</div>
+					<!-- Wrapper -->
+				</div>
+				<!--// container -->		
+			</div>
+			<!--// Header skills -->
+		</header>
+		<!--// Header -->
+
+		<!-- Section-Portfolio -->
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+
+				<div class="portfolio__header gradient-wrapper">
+					<h2 class="title-h2 gradient">Портфолио</h2>
+				</div>
+
+				<!-- Portfolio Block -->
+				<div class="mix-block">
+
+					<ul class="mix-block__btn">
+						<li class="mix-button" data-aos="zoom-in-right" data-aos-delay="100"><button type="button" data-filter="all">Все</button></li>
+						<li class="mix-button" data-aos="zoom-in-right" data-aos-delay="150"><button type="button" data-filter=".lending">Lendings</button></li>
+						<li class="mix-button" data-aos="zoom-in-right" data-aos-delay="200"><button type="button" data-filter=".multipage">Multipages</button></li>
+						<li class="mix-button" data-aos="zoom-in-right" data-aos-delay="250"><button type="button" data-filter=".html">HTML</button></li>
+						<li class="mix-button" data-aos="zoom-in-right" data-aos-delay="300"><button type="button" data-filter=".wp">WordPress</button></li>
+					</ul>
+
+					<!-- Projects Row -->
+					<div class="project-block" id="mix-projects">
+
+						<!-- project-Card -->
+						<a class="project-wrapper project-card project-card--big mix multipage" href="http://cr47251.tmweb.ru/forrest-travel/main.html" target="_blank">
+
+							<picture class="card-img">
+								<source srcset="./img/projects/project-01__mobile-xs.jpg" media="(max-width: 767px)">
+								<source srcset="./img/projects/project-01__tablet-small.jpg" media="(max-width: 899px)">
+								<source srcset="./img/projects/project-01__tablet-big.jpg" media="(max-width: 1139px)">
+								<img src="./img/projects/project-01.jpg" width="540" alt="Форест тревел">
+								<!-- Hover-blocks -->
+								<div class="middle-1">
+								</div>
+								<div class="middle-2">
+								</div>
+								<div class="middle-3">
+								<div class="text">Смотреть</div>
+								</div>
+								<!--// Hover-block -->
+							</picture>
+
+							<div class="project-card__text">
+								<h4 class="title-h4">Верстка “Форест тревел”</h4>
+								<p>Верстка многостраничного сайта </p>
+							</div>
+						</a>
+						<!--// project-Card -->
+
+						<!-- project-Card -->
+						<a class="project-wrapper project-card project-card--big mix lending wp" href="http://cr47251.tmweb.ru/unit/index.html" target="_blank">
+
+							<picture class="card-img">
+								<source srcset="./img/projects/project-02__mobile-xs.jpg" media="(max-width: 767px)">
+								<source srcset="./img/projects/project-02__tablet-small.jpg" media="(max-width: 899px)">
+								<source srcset="./img/projects/project-02__tablet-big.jpg" media="(max-width: 1139px)">
+								<img src="./img/projects/project-02.jpg" width="540" alt="UNIT">
+								<!-- Hover-blocks -->
+								<div class="middle-1">
+								</div>
+								<div class="middle-2">
+								</div>
+								<div class="middle-3">
+								<div class="text">Смотреть</div>
+								</div>
+								<!--// Hover-block -->
+							</picture>
+
+							<div class="project-card__text">
+								<h4 class="title-h4">Сайт приложения “Юнит”</h4>
+								<p>Верстка лендинга</p>
+							</div>
+						</a>
+						<!--// project-Card -->
+
+						<!-- project-Card -->
+						<a class="project-wrapper project-card project-card--big mix lending html" href="#" target="_blank">
+
+							<picture class="card-img">
+								<source srcset="./img/projects/project-03__mobile-xs.jpg" media="(max-width: 767px)">
+								<source srcset="./img/projects/project-03__tablet-small.jpg" media="(max-width: 899px)">
+								<source srcset="./img/projects/project-03__tablet-big.jpg" media="(max-width: 1139px)">
+								<img src="./img/projects/project-03.jpg" width="540" alt="project-03">
+								<!-- Hover-blocks -->
+								<div class="middle-1">
+								</div>
+								<div class="middle-2">
+								</div>
+								<div class="middle-3">
+								<div class="text">Смотреть</div>
+								</div>
+								<!--// Hover-block -->
+							</picture>
+
+							<div class="project-card__text">
+								<h4 class="title-h4">Карточка “Шаблон”</h4>
+								<p>Нужна для эффекта Фильтрации</p>
+							</div>
+						</a>
+						<!--// project-Card -->
+
+						<!-- project-Card -->
+						<a class="project-wrapper project-card project-card--big mix lending wp" href="#" target="_blank">
+
+							<picture class="card-img">
+								<source srcset="./img/projects/project-04__mobile-xs.jpg" media="(max-width: 767px)">
+								<source srcset="./img/projects/project-04__tablet-small.jpg" media="(max-width: 899px)">
+								<source srcset="./img/projects/project-04__tablet-big.jpg" media="(max-width: 1139px)">
+								<img src="./img/projects/project-04.jpg" width="540" alt="project-04">
+								<!-- Hover-blocks -->
+								<div class="middle-1">
+								</div>
+								<div class="middle-2">
+								</div>
+								<div class="middle-3">
+								<div class="text">Смотреть</div>
+								</div>
+								<!--// Hover-block -->
+							</picture>
+
+							<div class="project-card__text">
+								<h4 class="title-h4">Карточка “Шаблон”</h4>
+								<p>Нужна для эффекта Фильтрации</p>
+							</div>
+						</a>
+						<!--// project-Card -->
+
+						<!-- project-Card -->
+						<a class="project-wrapper project-card project-card--big mix multipage html" href="#" target="_blank">
+							
+							<picture class="card-img">
+								<source srcset="./img/projects/project-05__tablet-small.jpg" media="(max-width: 899px)">
+								<source srcset="./img/projects/project-05__mobile-xs.jpg" media="(max-width: 767px)">
+								<source srcset="./img/projects/project-05__tablet-big.jpg" media="(max-width: 1139px)">
+								<img src="./img/projects/project-05.jpg" width="540" alt="project-05">
+								<!-- Hover-blocks -->
+								<div class="middle-1">
+								</div>
+								<div class="middle-2">
+								</div>
+								<div class="middle-3">
+								<div class="text">Смотреть</div>
+								</div>
+								<!--// Hover-block -->
+							</picture>
+
+							<div class="project-card__text">
+								<h4 class="title-h4">Карточка “Шаблон”</h4>
+								<p>Нужна для эффекта Фильтрации</p>
+							</div>
+						</a>
+						<!--// project-Card -->
+					</div>
+					<!-- Projects Row -->
+
+				</div>
+				<!--// Portfolio Block -->
+			</div>
+			<!--// Container -->
+		</section>
+		<!--// Section Portfolio -->
+
+		<!-- Section-Timeline -->
+		<section class="timeline" id="timeline">
+			<div class="container">
+
+				<div class="timeline__header gradient-wrapper">
+					<h2 class="title-h2 gradient">Как я работаю</h2>
+				</div>
+
+				<!-- Timeline Wrapper -->
+				<div class="timeline__wrapper">
+
+					<!-- Timeline Item -->
+					<div class="timeline__item">
+
+						<div class="item-icon">
+
+						</div>
+						
+						<div class="item-text" data-aos="zoom-in-down" data-aos-duration="700">
+
+							<div class="item-title gradient-wrapper">
+								<h5 class="title-h5 gradient">Оцениваю макет</h5>
+							</div>
+	
+							<p>Оцениваю объем работы, сложность,<br>нюансы. Задаю вопросы.</p>
+							<span>Время: 2 часа</span>
+						</div>
+
+					</div>
+					<!-- //Timeline Item -->
+
+					<!-- Timeline Item -->
+					<div class="timeline__item">
+						
+						<div class="item-icon">
+							
+						</div>
+						
+						<div class="item-text" data-aos="zoom-in-down" data-aos-duration="700">
+														
+							<div class="item-title gradient-wrapper">
+								<h5 class="title-h5 gradient">ТЗ, смета и график работ</h5>
+							</div>
+
+							<p>Согласовываем техническое задание и <br>график работ по проекту. Осмечиваю<br> стоимость по этапам работы.</p>
+							<span>Время: 2 - 4 часа</span>
+
+						</div>
+
+					</div>
+					<!-- //Timeline Item -->
+
+					<!-- Timeline Item -->
+					<div class="timeline__item">
+						
+						<div class="item-icon">
+							
+						</div>
+						
+						<div class="item-text" data-aos="zoom-in-down" data-aos-duration="700">
+
+							<div class="item-title gradient-wrapper">
+								<h5 class="title-h5 gradient">Вы держите руку на пульсе</h5>
+							</div>
+	
+							<p>Выдаю клиенту доступ к GitHub репозиторию и<br> доске Trello. Вы в любое время можете видеть<br> актуальное состояние проекта и задач.</p>
+						</div>
+
+					</div>
+					<!-- //Timeline Item -->
+
+					<!-- Timeline Item -->
+					<div class="timeline__item">
+						
+						<div class="item-icon">
+							
+						</div>
+						
+						<div class="item-text" data-aos="zoom-in-down" data-aos-duration="700">
+
+							<div class="item-title gradient-wrapper">
+								<h5 class="title-h5 gradient">Выполняю каждый этап</h5>
+							</div>
+	
+							<p>Поочередно выполняю каждый этап<br> работы. Передаю результаты. Заказчик<br> производит поэтапную оплату.</p>
+						</div>
+
+					</div>
+					<!-- //Timeline Item -->
+
+					<!-- Timeline Item -->
+					<div class="timeline__item">
+						
+						<div class="item-icon">
+							
+						</div>
+						
+						<div class="item-text" data-aos="zoom-in-down" data-aos-duration="700">
+
+							<div class="item-title gradient-wrapper">
+								<h5 class="title-h5 gradient">Финальное ревью проекта</h5>
+							</div>
+	
+							<p>Проект готов. Финальное ревью и полировка до<br> идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p>
+							<span>Время: 2 - 4 часа</span>
+
+						</div>
+						
+					</div>
+					<!-- //Timeline Item -->
+				</div>
+				<!--// Timeline Wrapper -->				
+
+			</div>
+			<!--// Container -->
+		</section>
+		<!--// Section-Timeline -->
+
+		<!-- Section Contacts -->
+		<section class="contacts" id="contacts">
+			<div class="container">
+
+				<div class="contacts__header gradient-wrapper">
+					<h2 class="title-h2 gradient">Контакты</h2>
+				</div>
+
+				<!-- Contacts Wrapper -->
+				<div class="contacts__wrapper">
+
+					<!-- Contacts Info -->
+					<div class="contacts__info">
+
+						<div class="contacts__text">
+							<p>Если вы ищите специалиста по верстке сайтов или<br> frontend разработчика в команду для работы над<br> проектом —  напишите мне.</p>
+						</div>
+
+						<div class="info-column">
+
+							<ul class="contact-list">
+								<li>
+									<span>Email</span>
+									<a class="page-link" href="mailto:m.riakhovskyi@gmail.com">m.riakhovskyi@gmail.com</a>
+								</li>
+								<li>
+									<span>Телефон</span>
+									<a class="page-link" href="tel:+48722715698">+48 722-715-698</a>
+								</li>
+							</ul>
+
+							<!-- Contacts-Social -->
+							<div class="contacts-social width-mdf">
+								<a href="https://t.me/Michael_Ria"> 
+									<svg class="telegram-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#039BE5"/>
+										<path d="M10.9815 23.48L34.1216 14.558C35.1956 14.17 36.1336 14.82 35.7856 16.444L35.7875 16.442L31.8475 35.004C31.5555 36.32 30.7736 36.64 29.6796 36.02L23.6796 31.598L20.7855 34.386C20.4655 34.706 20.1955 34.976 19.5755 34.976L20.0015 28.87L31.1215 18.824C31.6056 18.398 31.0135 18.158 30.3755 18.582L16.6336 27.234L10.7095 25.386C9.42355 24.978 9.39555 24.1 10.9815 23.48Z" fill="white"/>
+									</svg>
+								</a>
+								<a href="https://vk.com/michael_ria"> 
+									<svg class="vk-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#4D76A1"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M23.0933 34.5261H24.977C24.977 34.5261 25.546 34.4637 25.8365 34.1505C26.1039 33.863 26.0953 33.3231 26.0953 33.3231C26.0953 33.3231 26.0585 30.7955 27.2316 30.4233C28.388 30.0567 29.873 32.8662 31.447 33.9464C32.6372 34.764 33.5416 34.5847 33.5416 34.5847L37.7501 34.5261C37.7501 34.5261 39.9517 34.3905 38.9078 32.6595C38.8222 32.5179 38.2998 31.3791 35.7787 29.0389C33.1399 26.5896 33.4933 26.9858 36.672 22.749C38.6079 20.1688 39.3818 18.5936 39.1401 17.9189C38.9095 17.2763 37.4857 17.4462 37.4857 17.4462L32.7471 17.4757C32.7471 17.4757 32.3959 17.4278 32.1353 17.5835C31.8808 17.7362 31.7169 18.0922 31.7169 18.0922C31.7169 18.0922 30.967 20.0888 29.9667 21.7869C27.8567 25.3699 27.013 25.559 26.6682 25.3365C25.866 24.818 26.0662 23.2534 26.0662 22.142C26.0662 18.6697 26.5929 17.222 25.0408 16.8472C24.5257 16.7227 24.1466 16.6406 22.8293 16.6273C21.1386 16.6098 19.7075 16.6324 18.8972 17.0295C18.3582 17.2934 17.9423 17.8817 18.1956 17.9155C18.5088 17.9574 19.2181 18.1067 19.5941 18.6188C20.0797 19.2794 20.0626 20.7631 20.0626 20.7631C20.0626 20.7631 20.3416 24.8505 19.411 25.3583C18.7723 25.7066 17.8961 24.9955 16.015 21.7449C15.0511 20.0798 14.3234 18.2394 14.3234 18.2394C14.3234 18.2394 14.183 17.8954 13.9328 17.7114C13.629 17.4885 13.2046 17.4175 13.2046 17.4175L8.70178 17.447C8.70178 17.447 8.02582 17.4658 7.77768 17.7598C7.55693 18.0212 7.76014 18.5619 7.76014 18.5619C7.76014 18.5619 11.2854 26.8095 15.277 30.9658C18.937 34.7764 23.0933 34.5261 23.0933 34.5261Z" fill="white"/>
+									</svg>
+								</a>
+								<a href="https://www.facebook.com/michael.ria.33">
+									<svg class="facebook-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M23.9999 0C37.2555 0 48 10.746 48 24.0001C48 37.2557 37.2555 48 23.9999 48C10.7443 48 0 37.2555 0 24.0001C0 10.746 10.7445 0 23.9999 0Z" fill="#3B5998"/>
+										<path d="M26.9219 16.5224H30.0149V11.9534H26.379V11.9699C21.9734 12.1259 21.0705 14.6024 20.9909 17.2034H20.9819V19.485H17.9819V23.9594H20.9819V35.9533H25.5029V23.9594H29.2064L29.9218 19.485H25.5044V18.1065C25.5044 17.2275 26.0893 16.5224 26.9219 16.5224Z" fill="white"/>
+									</svg>
+								</a>
+								<!-- <a href="#">
+									<svg class="instagram-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0)">
+										<path d="M2.99991 3.26602C-0.77209 7.18402 -8.97646e-05 11.346 -8.97646e-05 23.99C-8.97646e-05 34.49 -1.83209 45.016 7.75591 47.494C10.7499 48.264 37.2779 48.264 40.2679 47.49C44.2599 46.46 47.5079 43.222 47.9519 37.576C48.0139 36.788 48.0139 11.206 47.9499 10.402C47.4779 4.38802 43.7759 0.922017 38.8979 0.220017C37.7799 0.0580165 37.5559 0.0100165 31.8199 1.64956e-05C11.4739 0.0100165 7.01391 -0.895984 2.99991 3.26602Z" fill="url(#paint0_linear)"/>
+										<path d="M23.9961 6.27804C16.7341 6.27804 9.83812 5.63204 7.20412 12.392C6.11612 15.184 6.27412 18.81 6.27412 24.002C6.27412 28.5581 6.12812 32.84 7.20412 35.6101C9.83212 42.3741 16.7841 41.7261 23.9921 41.7261C30.9461 41.7261 38.1161 42.4501 40.7821 35.6101C41.8721 32.7901 41.7121 29.2181 41.7121 24.002C41.7121 17.078 42.0941 12.608 38.7361 9.25204C35.3361 5.85204 30.7381 6.27804 23.9881 6.27804H23.9961ZM22.4081 9.47205C37.5561 9.44805 39.4841 7.76405 38.4201 31.1581C38.0421 39.4321 31.7421 38.524 23.9981 38.524C9.87812 38.524 9.47212 38.12 9.47212 23.994C9.47212 9.70405 10.5921 9.48005 22.4081 9.46805V9.47205ZM33.4561 12.414C32.2821 12.414 31.3301 13.366 31.3301 14.54C31.3301 15.714 32.2821 16.666 33.4561 16.666C34.6301 16.666 35.5821 15.714 35.5821 14.54C35.5821 13.366 34.6301 12.414 33.4561 12.414ZM23.9961 14.9C18.9701 14.9 14.8961 18.976 14.8961 24.002C14.8961 29.028 18.9701 33.1021 23.9961 33.1021C29.0221 33.1021 33.0941 29.028 33.0941 24.002C33.0941 18.976 29.0221 14.9 23.9961 14.9ZM23.9961 18.094C31.8061 18.094 31.8161 29.91 23.9961 29.91C16.1881 29.91 16.1761 18.094 23.9961 18.094Z" fill="white"/>
+										</g>
+										<defs>
+										<linearGradient x1="3.09195" y1="44.9342" x2="47.7029" y2="6.32397" gradientUnits="userSpaceOnUse">
+										<stop offset="0" stop-color="#FFDD55"/>
+										<stop offset="0.5" stop-color="#FF543E"/>
+										<stop offset="1" stop-color="#C837AB"/>
+										</linearGradient>
+										<clipPath id="clip0">
+										<rect width="48" height="48" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+										
+								</a> -->
+								<a href="https://api.whatsapp.com/send? phone=+48722715698">
+									<svg class="whatsapp-social" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0)">
+										<path d="M23.9871 0.0126382C10.7401 0.015449 0.00357906 10.7566 0.00638989 24.0036C0.00732684 28.5906 1.32364 33.0811 3.79905 36.9428L0.0672913 46.6251C-0.131435 47.1401 0.124914 47.7186 0.639859 47.9174C0.755009 47.9618 0.877281 47.9845 1.00068 47.9843C1.11517 47.9849 1.22882 47.9653 1.33648 47.9263L11.3306 44.3585C22.5751 51.3617 37.3677 47.9234 44.3709 36.6788C51.374 25.4342 47.9357 10.6416 36.6912 3.63852C32.8795 1.26449 28.4778 0.00823454 23.9871 0.0126382Z" fill="#55CD6C"/>
+										<path d="M35.422 28.098C35.422 28.098 32.9735 26.8987 31.4404 26.0992C29.7054 25.2057 27.6666 26.8787 26.7072 27.8302C25.214 27.2566 23.8502 26.3908 22.6956 25.2837C21.5882 24.1292 20.7225 22.7654 20.1491 21.272C21.1005 20.3106 22.7695 18.2738 21.8801 16.5389C21.0905 15.0038 19.8813 12.5572 19.8813 12.5552C19.7116 12.2185 19.3669 12.0059 18.9898 12.0055H16.991C14.0801 12.5083 11.9636 15.0482 11.994 18.002C11.994 21.1401 15.7497 27.1686 18.2823 29.703C20.8148 32.2375 26.8433 35.9913 29.9833 35.9913C32.9371 36.0217 35.477 33.9051 35.9798 30.9943V28.9955C35.9801 28.6144 35.7638 28.2663 35.422 28.098Z" fill="#FAFAFA"/>
+										</g>
+										<defs>
+										<clipPath" id="clip0">
+										<rect width="48" height="48" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</div>
+							<!--// Contacts-Social -->
+						</div>
+
+					</div>
+					<!-- // Contacts Info -->
+
+						<!-- BG - Icon -->
+						<div class="contacts__bg-icon">
+							<svg width="280" height="243" viewBox="0 0 280 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_112:373)">
+								<g opacity="0.27">
+								<path opacity="0.27" fill-rule="evenodd" clip-rule="evenodd" d="M231.456 110.127C224.666 108.099 217.621 107.052 210.534 107.016C201.504 106.991 192.568 108.855 184.301 112.489C190.895 87.907 206.736 45.489 238.293 40.713C239.734 40.4869 241.079 39.8479 242.164 38.8733C243.249 37.8988 244.029 36.6304 244.408 35.222L251.308 10.102C251.596 9.05295 251.66 7.95497 251.496 6.87952C251.332 5.80406 250.943 4.77523 250.355 3.85999C249.774 2.95387 249.005 2.18356 248.1 1.6015C247.195 1.01944 246.174 0.63931 245.109 0.487C242.77 0.163164 240.411 0.000448382 238.05 0C200.172 0 162.659 40.259 146.83 97.9C137.538 131.718 134.814 182.562 157.702 214.565C170.51 232.472 189.196 242.035 213.241 242.99C213.341 242.99 213.436 242.996 213.534 242.996C243.203 242.996 269.511 222.65 277.514 193.523C282.312 176.244 280.124 157.771 271.424 142.09C267.188 134.399 261.477 127.617 254.62 122.133C247.762 116.648 239.891 112.569 231.456 110.127Z" fill="#9EB6D2"/>
+								<path opacity="0.27" fill-rule="evenodd" clip-rule="evenodd" d="M131.422 142.094C127.187 134.401 121.477 127.618 114.619 122.133C107.762 116.648 99.8903 112.567 91.4551 110.125C84.6652 108.098 77.6209 107.051 70.5351 107.015C61.5039 106.99 52.5672 108.854 44.2991 112.487C50.8931 87.905 66.7351 45.487 98.2991 40.713C99.7398 40.4861 101.084 39.8466 102.169 38.872C103.254 37.8973 104.033 36.6292 104.413 35.221L111.313 10.102C111.601 9.05291 111.665 7.95491 111.501 6.87946C111.336 5.804 110.947 4.77519 110.359 3.86002C109.779 2.95339 109.01 2.18269 108.105 1.60056C107.2 1.01842 106.18 0.638585 105.114 0.48703C102.776 0.16279 100.419 -0.00026753 98.0581 -0.000976562C60.1791 -0.000976562 22.6661 40.258 6.83409 97.899C-2.45491 131.717 -5.17992 182.561 17.7111 214.569C30.5171 232.469 49.2061 242.039 73.2481 242.991C73.3481 242.991 73.4431 242.997 73.5481 242.997C103.213 242.997 129.525 222.652 137.528 193.524C142.316 176.243 140.123 157.773 131.422 142.094Z" fill="#9EB6D2"/>
+								</g>
+								</g>
+								<defs>
+								<clipPath id="clip0_112:373">
+								<rect width="280" height="243" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</div>
+						<!--// BG - Icon -->
+
+					<form method="POST" action="" class="contact-form">
+						<div class="form-item">
+							<span class="fake-placeholder">Ваш Email</span>
+							<input class="form-input form-input--mod" type="email" name="email">
+						</div>
+			
+						<div class="form-item">
+							<span class="fake-placeholder">Текст сообщения</span>
+							<textarea class="form-input" name="message" cols="30" rows="10" id="#"></textarea>
+						</div>
+			
+						<div class="form-item">
+							<input class="form-btn" type="submit" value="Отправить">
+						</div>
+					</form>
+					<div id="answer"></div>
+
+				</div>
+				<!-- // Contacts Wrapper -->
+			</div>
+			<!--// Container -->
+		</section>
+		<!--// Section Contacts -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<!-- Footer Wrapper -->
+				<div class="footer__wrapper">
+
+					<div class="footer__copyright">
+						<span>&#169; 2021 &#8209; Михаил Ряховский</span>
+					</div>
+
+					<div class="footer__description">
+						<p>Веб-разработчик из Варшавы, занимаюсь версткой и созданием сайтов.</p>
+						<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="https://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
+				</div>
+
+				</div>
+				<!-- // Footer Wrapper -->
+			</div>
+			<!--// Container -->
+		</footer>
+		<!-- // Footer -->
+
+		<!-- Back Top Button -->
+		<a href="#top" class="backtop-btn" id="backtop"> &#10144; </a>
+
+		<!-- jQuery libs -->
+		<script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+		
+		<!-- jQuery-Validate libs -->
+		<script src="./libs/jquery-validate/jquery.validate.min.js"></script>
+
+		<!-- PageNav libs -->
+		<script src="./libs/pageNav/nav.js"></script>
+
+		<!-- Fontawesome libs -->
+		<script src="https://kit.fontawesome.com/7efd77be47.js" crossorigin="anonymous"></script>
+
+		<!-- MixitUp libs -->
+		<script src="./libs/mixitup/mixitup.min.js"></script>
+
+		<!-- Animation on Scroll -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+		<!-- Custom libs -->
+		<script src="./js/nav.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
